@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="onDataHandle"
+            type="com.example.tuananh.module1.AddEditDetail.RelaViewModel.OnDataHandle"></variable>
+    </data>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvRelationship"></android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/relationship_handle_container"
+            android:layout_below="@id/rvRelationship"
+            setLayout="@{onDataHandle}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"></LinearLayout>
+
+    </RelativeLayout>
+</layout>
